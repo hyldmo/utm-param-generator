@@ -69,7 +69,7 @@ const Home: React.StatelessComponent = () => {
 				</tbody>
 			</table>
 			<h2>Share Setup</h2>
-			<pre>{window.location.origin}?baseUrl={utm.baseUrl}&{params}</pre>
+			<pre>{window.location.origin}{window.location.pathname}?baseUrl={utm.baseUrl}&{params}</pre>
 		</div>
 	)
 }
