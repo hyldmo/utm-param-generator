@@ -15,7 +15,7 @@ export default function* () {
 
 function* save () {
 	yield call(sleep, 100)
-	const tracker: State['tracker'] = yield select<Selector<State>>(s => s.tracker)
+	const tracker: State['url'] = yield select<Selector<State>>(s => s.url)
 	localStorage.setItem(SAVE_KEY, JSON.stringify(tracker))
 }
 

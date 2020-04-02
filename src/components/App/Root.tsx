@@ -1,4 +1,3 @@
-import { Actions } from 'actions'
 import { ConnectedRouter } from 'connected-react-router'
 import RedBox from 'redbox-react'
 import React from 'react'
@@ -7,7 +6,6 @@ import configureStore, { history } from '../../configureStore'
 import App from './App'
 
 const store = configureStore()
-store.dispatch(Actions.loadSave())
 
 type State = {
 	error: Error | null

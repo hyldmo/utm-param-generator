@@ -1,0 +1,40 @@
+
+#home {
+	input[type="text"] {
+		width: 100%;
+		&::placeholder {
+			color: #ddd;
+		}
+	}
+	h2 {
+		&:hover {
+			cursor: pointer;
+		}
+		margin-bottom: 0.5rem;
+	}
+
+	table {
+		width: 100%;
+
+		label {
+			font-weight: bold;
+			@pad: 0.4em;
+			padding: @pad / 2 @pad;
+			margin-left: -@pad;
+			border-radius: @pad;
+
+			&:hover {
+				background-color: #eee;
+				cursor: pointer;
+			}
+		}
+	}
+
+	pre {
+		white-space: normal;
+		word-break: break-all;
+		background-color: #ddd;
+		padding: 0.75rem 1rem;
+		border-radius: 0.5rem;
+	}
+}

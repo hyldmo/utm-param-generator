@@ -1,9 +1,9 @@
-import TrackerActions from './tracker'
+import UrlActions from './url'
 import VersionActions from './version'
 import { GetMetaActions } from 'utils'
 
 export const Actions = {
-	...TrackerActions,
+	...UrlActions,
 	...VersionActions
 }
 
