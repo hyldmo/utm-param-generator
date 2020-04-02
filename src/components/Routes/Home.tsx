@@ -49,7 +49,15 @@ const Home: React.StatelessComponent = () => {
 								? <input type="text" placeholder="utm_parameter" value={param.name} onChange={e => dispatch(Actions.updateParamName(e.target.value, param.id))}  />
 								: <label htmlFor={param.name}>{param.name}</label>
 							}</td>
-							<td><input id={param.name} type="text" value={param.value} onChange={e => dispatch(Actions.updateParam(e.target.value, param.id))} placeholder={param.example}/></td>
+							<td>
+								<input
+									id={param.name}
+									type="text"
+									value={param.value}
+									onChange={e => dispatch(Actions.updateParam(e.target.value, param.id))}
+									placeholder={param.example}
+								/>
+							</td>
 							<td hidden={param.id <= 4}><Button onClick={() => dispatch(Actions.removeParam(param.id)) }><strong>-</strong></Button></td>
 						</tr>
 					))}

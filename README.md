@@ -1,14 +1,15 @@
-# Typescript React Starter Kit #
-[![Build Status](https://travis-ci.org/hyldmo/typescript-react-starter-kit.svg?branch=master)](https://travis-ci.org/hyldmo/typescript-react-starter-kit)
-[![Coverage Status](https://coveralls.io/repos/github/hyldmo/typescript-react-starter-kit/badge.svg?branch=master)](https://coveralls.io/github/hyldmo/typescript-react-starter-kit?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/hyldmo/typescript-react-starter-kit.svg)](https://greenkeeper.io/)
-[![dependencies Status](https://david-dm.org/hyldmo/typescript-react-starter-kit/status.svg)](https://david-dm.org/hyldmo/typescript-react-starter-kit)
-[![devDependencies Status](https://david-dm.org/hyldmo/typescript-react-starter-kit/dev-status.svg)](https://david-dm.org/hyldmo/typescript-react-starter-kit?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/hyldmo/typescript-react-starter-kit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/hyldmo/typescript-react-starter-kit?targetFile=package.json)
+# Utm Parameter Generator
+[![Build Status](https://travis-ci.org/hyldmo/utm-param-generator.svg?branch=master)](https://travis-ci.org/hyldmo/utm-param-generator)
+[![Coverage Status](https://coveralls.io/repos/github/hyldmo/utm-param-generator/badge.svg?branch=master)](https://coveralls.io/github/hyldmo/utm-param-generator?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/hyldmo/utm-param-generator.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/hyldmo/utm-param-generator/status.svg)](https://david-dm.org/hyldmo/utm-param-generator)
+[![devDependencies Status](https://david-dm.org/hyldmo/utm-param-generator/dev-status.svg)](https://david-dm.org/hyldmo/utm-param-generator?type=dev)
+[![Known Vulnerabilities](https://snyk.io/test/github/hyldmo/utm-param-generator/badge.svg?targetFile=package.json)](https://snyk.io/test/github/hyldmo/utm-param-generator?targetFile=package.json)
 ----
 
 ## Overview ##
-This repository showcases a bunch of different technologies and frameworks that I use when developing React projects, combined into an opinionated boilerplate.
+This is a simple tool for generating links with UTM parameters (or any other parameters)
+Check out the live site at
 
 ## Features ##
 - [Typescript](http://www.typescriptlang.org/) for type-checking

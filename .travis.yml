@@ -5,9 +5,6 @@ cache: yarn
 script:
   - yarn lint
   - yarn stylelint
-  - yarn test:cover
-  - yarn dev & wait-on http://localhost:1337
-  - yarn test:e2e --record --key $CYPRESS_KEY
   - yarn prod
 
 notifications:
