@@ -3,7 +3,7 @@ import path from 'path'
 import webpack from 'webpack'
 import baseConfig from './webpack.config'
 
-(baseConfig.module as any).rules[1].use.unshift(MiniCssExtractPlugin.loader)
+;(baseConfig.module as any).rules[1].use.unshift(MiniCssExtractPlugin.loader)
 
 const config: webpack.Configuration = {
 	...baseConfig,
@@ -20,7 +20,7 @@ const config: webpack.Configuration = {
 		new MiniCssExtractPlugin({
 			filename: '[contenthash].css',
 			chunkFilename: '[contenthash].css'
-		}),
+		}) as any,
 		...baseConfig.plugins
 	]
 }

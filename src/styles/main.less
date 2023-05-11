@@ -16,14 +16,14 @@ body {
 	background-color: @background-color;
 }
 
-button, input {
+.button, input {
 	padding: 0.5em;
 	background-color: @background-color;
 	outline: none;
 	border: 2px solid @main-color;
 }
 
-button, input, table, fieldset {
+.button, input, table, fieldset {
 	border-radius: 0.25em;
 }
 
@@ -39,5 +39,24 @@ button, input, table, fieldset {
 
 	.tablet() {
 		grid-template-columns: 0 100% 0;
+	}
+}
+
+.copy__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.copy__button {
+	cursor: pointer;
+	font-family: serif;
+	background: none;
+	border: none;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	padding: 0.25em;
+	&:hover {
+		background-color: rgb(240, 240, 240);
 	}
 }
