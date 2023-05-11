@@ -1,7 +1,6 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import path from 'path'
 import webpack from 'webpack'
-import jestConfig from '../jest.config.js'
 import packageJSON from '../package.json'
 import { getFolders } from './utils'
 import tsConfig from '../tsconfig.json'
@@ -14,7 +13,7 @@ const config: webpack.Configuration = {
 
 	resolve: {
 		alias: getFolders(path.join(context, tsConfig.compilerOptions.baseUrl)),
-		extensions: jestConfig.moduleFileExtensions.map(ext => `.${ext}`)
+		extensions: ['ts', 'tsx', 'js', 'json', 'less'].map(ext => `.${ext}`)
 	},
 
 	module: {
@@ -50,9 +49,9 @@ const config: webpack.Configuration = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: packageJSON.name
-					.split('-')
-					.map((name) => name.charAt(0).toUpperCase() + name.slice(1))
-					.join(' '),
+				.split('-')
+				.map(name => name.charAt(0).toUpperCase() + name.slice(1))
+				.join(' '),
 			version: packageJSON.version,
 			template: 'static/index.ejs'
 		}),

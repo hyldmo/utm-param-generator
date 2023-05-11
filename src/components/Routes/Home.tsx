@@ -22,9 +22,9 @@ const Home: React.StatelessComponent = () => {
 
 	useEffect(() => {
 		const urlparams = new URLSearchParams(window.location.search)
-		const baseUrl = urlparams.get('baseUrl')
-		if (baseUrl) {
-			dispatch(Actions.updateUrl(baseUrl))
+		const url = urlparams.get('baseUrl')
+		if (url) {
+			dispatch(Actions.updateUrl(url))
 			urlparams.delete('baseUrl')
 		}
 
