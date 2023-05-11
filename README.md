@@ -9,7 +9,7 @@
 
 ## Overview ##
 This is a simple tool for generating links with UTM parameters (or any other parameters)
-Check out the live site at
+Check out the live site at hyldmo.github.io/utm-param-generator/
 
 ## Features ##
 - [Typescript](http://www.typescriptlang.org/) for type-checking
